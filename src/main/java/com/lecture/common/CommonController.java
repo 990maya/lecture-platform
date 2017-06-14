@@ -21,4 +21,9 @@ public class CommonController {
         model.addAttribute("greeting", "Hello World");
         return "welcome";
     }
+    
+    @RequestMapping(value="/socket", method = RequestMethod.GET)
+    public String getSocketPage(ModelMap model) {
+        return "socket";
+    }
 }
